@@ -1,0 +1,24 @@
+-- Find all the rows where session is java
+select * from rgm where Sesion = "java";
+
+select namee ,session_ from rgm where sesion = "java";
+
+-- select the student whose session is java and adreess is ndl
+select * from rgm where sesion ="java" and Address="NDL";
+
+-- Fetch the details of student whose name starts with 'j'
+select * from rgm where namee like "j%";
+
+select * from rgm where namee like "ja%";
+
+select * from rgm where namee like "%a" and namee = "%n";
+
+select * from rgm where namee like "_h%";
+
+-- Dont want to see the student whose name starts with ja
+select * from rgm where namee not like "ja%";
+
+select * from rgm where Address in ('hyd','ndl');
+
+-- students who are studying in rgmcet,gprec
+select * from rgm where university = 'rgmcet' or university = 'gprec';
